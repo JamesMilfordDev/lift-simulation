@@ -47,7 +47,7 @@ Call this the **Time Skip Approach**.
 
 I chose to avoid the Time Skip Approach in my implementations. Although this approach is more efficient, the more gamified nature of the time skip simulation is less intuitive, and harder to reason about and modify. Again, with the current approach, the decision logic is explicit and easy to reason about, which was especially important given the primary goal was to implement and compare multiple different algorithms.
 
-### Lift Algorithm Efficiency
+## Lift Algorithm Efficiency
 
 In my implementations, I assumed that each floor has exactly one external call button, which is non-directed. However, given that each `Passenger` object contains values for both its start floor and destination floor, we could alternatively model each floor as having a pair of directed external call buttons: one for up and one for down. Whether a passenger presses up or down can be inferred from their start and destination floors.
 
@@ -61,7 +61,7 @@ A better complement is therefore: the lift changes direction when there are neit
 
 In our case of the lift travelling up and there being an external passenger at floor 10, assuming the lift has capacity, it will continue to floor 10. At that point, it will change direction, and then collect the passenger.
 
-### Reporting
+## Reporting
 
 The main area in which my applications could be optimised is improving their reporting.
 
